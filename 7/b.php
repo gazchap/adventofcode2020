@@ -21,7 +21,6 @@
 			$this_bag = $map[ $colour ];
 			foreach( $this_bag as $secondary => $quantity ) {
 				$progress += $quantity * $last_qty;
-				echo $colour . "/" . $secondary . " - " . $quantity . " > " . $progress . "\n";
 				$progress = count_bags_inside_colour( $secondary, $map, $progress, $quantity * $last_qty );
 			}
 		}
